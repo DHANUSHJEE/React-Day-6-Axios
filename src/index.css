@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.btn-success {
+  background-color: #8BC34A;
+  border: none;
+}
+
+/* Home Component Styles */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #333;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+/* Products Component Styles */
+.user {
+  margin-top: 30px;
+}
+
+.table {
+  background-color: #fff;
+}
+
+.table-primary {
+  background-color: #bbdefb;
+}
+
+.table-danger {
+  background-color: #ef9a9a;
+  color: #fff;
+}
+
+/* Edit Component Styles */
+.btn-primary {
+  background-color: #2196F3;
+}
+
+/* AddUser Component Styles */
+.userWidth {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .link a {
+    font-size: 0.9rem;
+  }
+
+  .btn-success {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .link a {
+    font-size: 0.8rem;
+  }
+
+  .btn-success {
+    font-size: 0.8rem;
+  }
+}
