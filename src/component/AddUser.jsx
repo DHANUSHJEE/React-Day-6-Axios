@@ -18,8 +18,17 @@ const AddUser = () => {
     };
 
     //post  request to add a new user using axios
+
+    //post request to add a new user using axios
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // Check if all required fields are filled
+        if (!createData.name || !createData.email || !createData.website || !createData.company || !createData.phone) {
+            alert("Please fill in all the required fields");
+            return;
+        }
+
         try {
             const response = await axios.post(
                 "https://65eb44ef43ce164189339991.mockapi.io/api/users",
@@ -31,6 +40,20 @@ const AddUser = () => {
             console.error("Error creating user:", error);
         }
     };
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         const response = await axios.post(
+    //             "https://65eb44ef43ce164189339991.mockapi.io/api/users",
+    //             createData
+    //         );
+    //         console.log(response.data);
+    //         navigate("/users"); // Redirect to users page after successful creation
+    //     } catch (error) {
+    //         console.error("Error creating user:", error);
+    //     }
+    // };
 
     return (
         //Form with all the necessary fields for adding a new user
